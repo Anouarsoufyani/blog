@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-4.times do |index|
-  categoerie = Categorie.create(name: "Cat#{index}")
+5.times do |index|
+  commentaires = Commentaire.create(content: "voici un commentaire #{index}", user_id: "#{index}".to_i, article_id: "#{index}".to_i)
 end
