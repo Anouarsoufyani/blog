@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
 
-5.times do |index|
-  commentaires = Commentaire.create(content: "voici un commentaire #{index}", user_id: "#{index}".to_i, article_id: "#{index}".to_i)
+10.times do |index|
+  like = Like.create(user_id: "#{index}".to_i, article_id: "#{index}".to_i)
 end
